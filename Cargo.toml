@@ -1,0 +1,6 @@
+[package]
+name = "rust-bitcoin-rpc"
+version = "0.1.0"
+authors = ["Jwata <watanabe0621@gmail.com>"]
+
+[dependencies]
