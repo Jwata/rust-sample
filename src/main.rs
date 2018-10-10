@@ -1,11 +1,11 @@
-mod request;
-mod error;
-
-use request::request;
+extern crate rpc_client;
 
 fn main() {
-    match request() {
-        Ok(text) => println!("{}", text),
-        Err(err) => println!("{}", err),
+
+    let url = "someurl".to_string();
+    
+    match rpc_client::request::call(url) {
+        Ok(res) => println!("{}", res),
+        Err(err) => println!("{}", err)
     }
 }

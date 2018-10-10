@@ -4,8 +4,11 @@ version = "0.1.0"
 authors = ["Jwata <watanabe0621@gmail.com>"]
 
 [lib]
-name = "bitcoin_rpc"
-path = "bitcoin_rpc/lib.rs"
+name = "rpc_client"
+path = "rpc_client/lib.rs"
 
 [dependencies]
-reqwest = "0.9.2"
+jsonrpc = "0.10.0"
+serde = "1.0.79"
+serde_derive = "1.0.79"
+serde_json = "1.0.32"
