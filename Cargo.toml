@@ -3,4 +3,9 @@ name = "rust-bitcoin-rpc"
 version = "0.1.0"
 authors = ["Jwata <watanabe0621@gmail.com>"]
 
+[lib]
+name = "bitcoin_rpc"
+path = "bitcoin_rpc/lib.rs"
+
 [dependencies]
+reqwest = "0.9.2"
